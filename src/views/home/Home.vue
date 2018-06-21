@@ -1,20 +1,24 @@
 <template>
 	<div class="home">
 		<heador :city="city"/>
+		<banner :list="bannerList"/>
 	</div>
 </template>
 
 <script>
 import Heador from '../../components/Header'
+import Banner from '../../components/Banner'
 import axios from 'axios'
 export default {
 	name: 'Home',
 	components: {
-		Heador
+		Heador,
+		Banner
 	},
 	data() {
 		return {
-			city: ''
+			city: '',
+			bannerList: []
 		}
 	},
 	mounted() {
@@ -30,6 +34,7 @@ export default {
 			if (res.msg && res.data) {
 				let data = res.data
 				this.city = data.city
+				this.bannerList = data.bannerList
 			}
 		}
 	}
