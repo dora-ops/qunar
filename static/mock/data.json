@@ -1,6 +1,28 @@
 {
 	"msg": "success",
 	"data": {
-		"city": "广州"
+		"city": "广州",
+		"bannerList": [{
+			"id": "1",
+			"url": "/api/images/1.jpg"
+		}, {
+			"id": "2",
+			"url": "/api/images/2.jpg"
+		}, {
+			"id": "3",
+			"url": "/api/images/3.jpg"
+		}, {
+			"id": "4",
+			"url": "/api/images/4.jpg"
+		}, {
+			"id": "5",
+			"url": "/api/images/5.jpg"
+		}, {
+			"id": "6",
+			"url": "/api/images/6.jpg"
+		}, {
+			"id": "7",
+			"url": "/api/images/7.jpg"
+		}]
 	}
 }
