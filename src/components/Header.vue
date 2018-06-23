@@ -26,50 +26,50 @@ export default {
 
 <style lang="stylus" scoped>
 	.header
-		color: #fff
-		height: 100px
-		padding: 0 15px
-		background-color: #00bcd4
-		display: flex
-		align-items: center
+		color #fff
+		height 100px
+		padding 0 15px
+		background-color #00bcd4
+		display flex
+		align-items center
 		.header-left
 			color #fff
-			width: 92px
-			height: 100%
-			text-align: center
+			width 92px
+			height 100%
+			text-align center
 			display flex
-			align-items: center
+			align-items center
 			justify-content center
 			.iconfont
-				font-size: 48px
+				font-size 48px
 		.header-right
-			min-width: 92px
+			min-width 92px
 			height 100%
 			display flex
 			padding-left 15px
 			.city
 				color #fff
-				font-size: 32px
-				display: flex
-				align-items: center
-				justify-content: center
+				font-size 32px
+				display flex
+				align-items center
+				justify-content center
 				.iconfont
 					font-size 32px
-					margin-left: 8px
+					margin-left 8px
 		.header-center
-			flex: 1
+			flex 1
 			.header-search
-				color: #e4e7ea
-				height: 72px
-				padding: 0 14px
-				border-radius: 6px
-				background-color: #fff
-				display: flex
-				align-items: center
+				color #e4e7ea
+				height 72px
+				padding 0 14px
+				border-radius 6px
+				background-color #fff
+				display flex
+				align-items center
 				.iconfont
-					font-size: 48px
-					margin-right: 6px
+					font-size 48px
+					margin-right 6px
 				span
-					font-size: 32px
-					white-space: nowrap
+					font-size 32px
+					white-space nowrap
 </style>
