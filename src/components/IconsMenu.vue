@@ -56,6 +56,8 @@ export default {
 	.icons-menu >>> .swiper-pagination-bullet-active
 		background-color rgba(0,175,190,.8)
 	.icons-menu
+		padding-bottom 48px
+		background-color #fff
 		.swiper-slide
 			display flex
 			flex-wrap wrap
