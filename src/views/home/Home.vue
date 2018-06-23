@@ -4,6 +4,7 @@
 		<banner :list="bannerList"/>
 		<icons-menu :list="iconsMenuList"/>
 		<adv :list="advList"/>
+		<hot :list="hotList"/>
 	</div>
 </template>
 
@@ -12,6 +13,7 @@ import Heador from '../../components/Header'
 import Banner from '../../components/Banner'
 import IconsMenu from '../../components/IconsMenu'
 import Adv from '../../components/Adv'
+import Hot from '../../components/Hot'
 import axios from 'axios'
 export default {
 	name: 'Home',
@@ -19,14 +21,16 @@ export default {
 		Heador,
 		Banner,
 		IconsMenu,
-		Adv
+		Adv,
+		Hot
 	},
 	data() {
 		return {
 			city: '',
 			bannerList: [],
 			iconsMenuList: [],
-			advList: []
+			advList: [],
+			hotList: []
 		}
 	},
 	mounted() {
@@ -45,6 +49,7 @@ export default {
 				this.bannerList = data.bannerList
 				this.iconsMenuList = data.iconsMenuList
 				this.advList = data.advList
+				this.hotList = data.hotList
 			}
 		}
 	}
