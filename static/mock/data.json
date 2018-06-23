@@ -23,6 +23,47 @@
 		}, {
 			"id": "7",
 			"url": "/api/images/7.jpg"
+		}],
+		"iconsMenuList": [{
+			"id": 1,
+			"url": "/api/images/i1.png",
+			"name": "景点门票"
+		}, {
+			"id": 2,
+			"url": "/api/images/i2.png",
+			"name": "必游榜单"
+		}, {
+			"id": 3,
+			"url": "/api/images/i3.png",
+			"name": "动植物园"
+		}, {
+			"id": 4,
+			"url": "/api/images/i4.png",
+			"name": "公园"
+		}, {
+			"id": 5,
+			"url": "/api/images/i5.png",
+			"name": "游船游艇"
+		}, {
+			"id": 6,
+			"url": "/api/images/i6.png",
+			"name": "踏青赏花"
+		}, {
+			"id": 7,
+			"url": "/api/images/i7.png",
+			"name": "名胜古迹"
+		}, {
+			"id": 8,
+			"url": "/api/images/i8.png",
+			"name": "一日游"
+		}, {
+			"id": 9,
+			"url": "/api/images/i9.png",
+			"name": "玩转长隆"
+		}, {
+			"id": 10,
+			"url": "/api/images/i10.png",
+			"name": "全部玩乐"
 		}]
 	}
 }
