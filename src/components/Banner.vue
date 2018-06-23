@@ -18,11 +18,11 @@ export default {
 	data() {
 		return {
 			swiperOption: {
+				loop: true,
+				autoplay: true,
 				pagination: {
 					el: '.swiper-pagination'
-				},
-				autoplay: true,
-				loop: true
+				}
 			}
 		}
 	}
