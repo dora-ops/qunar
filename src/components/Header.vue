@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<div class="header-right">
-			<div class="city">{{this.city}}<i class="iconfont">&#xe6dc;</i></div>
+			<div class="city">{{this.city}}<i class="iconfont">&#xe602;</i></div>
 		</div>
 	</div>
 </template>
