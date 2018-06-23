@@ -73,6 +73,60 @@
 			"id": 2,
 			"url": "/api/images/adv2.png",
 			"desc": "暑期大促"
+		}],
+		"hotList":[{
+			"id": 1,
+			"imgsrc": "/api/images/hot1.jpg",
+			"name": "长隆水上乐园",
+			"price": 97,
+			"top1": true
+		}, {
+			"id": 2,
+			"imgsrc": "/api/images/hot2.jpg",
+			"name": "长隆野生动物世界",
+			"price": 171.01,
+			"top2": true
+		}, {
+			"id": 3,
+			"imgsrc": "/api/images/hot3.jpg",
+			"name": "长隆欢乐世界",
+			"price": 157.6,
+			"top3": true
+		}, {
+			"id": 4,
+			"imgsrc": "/api/images/hot4.jpg",
+			"name": "长隆国际大马戏剧院",
+			"price": 313.9
+		}, {
+			"id": 5,
+			"imgsrc": "/api/images/hot5.jpg",
+			"name": "珠江夜游",
+			"price": 178
+		}, {
+			"id": 6,
+			"imgsrc": "/api/images/hot6.jpg",
+			"name": "广州长隆旅游度假区",
+			"price": 68.9
+		}, {
+			"id": 7,
+			"imgsrc": "/api/images/hot7.jpg",
+			"name": "广州塔",
+			"price": 75
+		}, {
+			"id": 8,
+			"imgsrc": "/api/images/hot8.png",
+			"name": "广东科学中心",
+			"price": 30
+		}, {
+			"id": 9,
+			"imgsrc": "/api/images/hot9.jpg",
+			"name": "白水寨",
+			"price": 49.5
+		}, {
+			"id": 10,
+			"imgsrc": "/api/images/hot10.jpg",
+			"name": "广州正佳极地海洋世界",
+			"price": 49.5
 		}]
 	}
 }
