@@ -64,6 +64,15 @@
 			"id": 10,
 			"url": "/api/images/i10.png",
 			"name": "全部玩乐"
+		}],
+		"advList": [{
+			"id": 1,
+			"url": "/api/images/adv1.png",
+			"desc": "门票特卖"
+		}, {
+			"id": 2,
+			"url": "/api/images/adv2.png",
+			"desc": "暑期大促"
 		}]
 	}
 }
