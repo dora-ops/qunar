@@ -2,23 +2,27 @@
 	<div class="home">
 		<heador :city="city"/>
 		<banner :list="bannerList"/>
+		<icons-menu :list="iconsMenuList"/>
 	</div>
 </template>
 
 <script>
 import Heador from '../../components/Header'
 import Banner from '../../components/Banner'
+import IconsMenu from '../../components/IconsMenu'
 import axios from 'axios'
 export default {
 	name: 'Home',
 	components: {
 		Heador,
-		Banner
+		Banner,
+		IconsMenu
 	},
 	data() {
 		return {
 			city: '',
-			bannerList: []
+			bannerList: [],
+			iconsMenuList: []
 		}
 	},
 	mounted() {
@@ -35,6 +39,7 @@ export default {
 				let data = res.data
 				this.city = data.city
 				this.bannerList = data.bannerList
+				this.iconsMenuList = data.iconsMenuList
 			}
 		}
 	}
