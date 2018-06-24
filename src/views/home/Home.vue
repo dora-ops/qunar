@@ -6,6 +6,7 @@
 		<adv :list="advList"/>
 		<hot :list="hotList"/>
 		<like :list="likeList"/>
+		<weekend :list="weekendList"/>
 	</div>
 </template>
 
@@ -16,6 +17,7 @@ import IconsMenu from '../../components/IconsMenu'
 import Adv from '../../components/Adv'
 import Hot from '../../components/Hot'
 import Like from '../../components/Like'
+import Weekend from '../../components/Weekend'
 import axios from 'axios'
 export default {
 	name: 'Home',
@@ -25,7 +27,8 @@ export default {
 		IconsMenu,
 		Adv,
 		Hot,
-		Like
+		Like,
+		Weekend
 	},
 	data() {
 		return {
@@ -34,7 +37,8 @@ export default {
 			iconsMenuList: [],
 			advList: [],
 			hotList: [],
-			likeList: []
+			likeList: [],
+			weekendList: []
 		}
 	},
 	mounted() {
@@ -55,6 +59,7 @@ export default {
 				this.advList = data.advList
 				this.hotList = data.hotList
 				this.likeList = data.likeList
+				this.weekendList = data.weekendList
 			}
 		}
 	}
