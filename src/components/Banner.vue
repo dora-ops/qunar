@@ -2,7 +2,9 @@
 	<div class="banner">
 		<swiper :options="swiperOption">
 			<swiper-slide v-for="item of list" :key="item.id">
-				<img :src="item.url" />
+				<div class="item">
+					<img :src="item.imgsrc" alt="去哪儿门票"/>
+				</div>
 			</swiper-slide>
 			<div class="swiper-pagination"  slot="pagination"></div>
 		</swiper>
@@ -40,7 +42,7 @@ export default {
 		background #fff
 	.banner
 		height 200px
-	.swiper-slide
+	.item
 		img
 			width 100%
 </style>

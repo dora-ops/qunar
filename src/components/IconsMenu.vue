@@ -3,7 +3,7 @@
 		<swiper :options="swiperOption">
 			<swiper-slide v-for="(page, index) of pages" :key="index">
 				<div class="item" v-for="item of page" :key="item.id">
-					<img :src="item.url" />
+					<img :src="item.imgsrc" :alt="item.name" />
 					<span>{{item.name}}</span>
 				</div>
 			</swiper-slide>

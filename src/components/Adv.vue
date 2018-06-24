@@ -2,7 +2,9 @@
 	<div class="adv">
 		<ul>
 			<li v-for="(item, index) of list" :key="index">
-				<img :src="item.url">
+				<div class="item">
+					<img :src="item.imgsrc" :alt="item.desc"/>
+				</div>
 			</li>
 		</ul>
 	</div>
