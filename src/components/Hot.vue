@@ -13,8 +13,8 @@
 		<div class="hot-content">
 			<div class="item" v-for="(item, index) of list" :key="index">
 				<div class="image">
-					<img :src="item.imgsrc" alt="item.name">
-					<div class="top" :class="{top1: item.top1,top2: item.top2, top3: item.top3}"></div>
+					<img :src="item.imgsrc" :alt="item.name"/>
+					<div class="top" :class="{top1: item.top1,top2: item.top2,top3: item.top3}"></div>
 				</div>
 				<div class="infor">
 					<div class="name">{{item.name.substring(0, 6) + '...'}}</div>
@@ -59,6 +59,7 @@ export default {
 		.hot-content
 			margin 0 15px
 			overflow-x scroll
+			padding-bottom 24px
 			box-sizing border-box
 			display flex
 			.item
