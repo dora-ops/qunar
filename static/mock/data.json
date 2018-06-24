@@ -4,74 +4,74 @@
 		"city": "广州",
 		"bannerList": [{
 			"id": "1",
-			"url": "/api/images/1.jpg"
+			"imgsrc": "/api/images/1.jpg"
 		}, {
 			"id": "2",
-			"url": "/api/images/2.jpg"
+			"imgsrc": "/api/images/2.jpg"
 		}, {
 			"id": "3",
-			"url": "/api/images/3.jpg"
+			"imgsrc": "/api/images/3.jpg"
 		}, {
 			"id": "4",
-			"url": "/api/images/4.jpg"
+			"imgsrc": "/api/images/4.jpg"
 		}, {
 			"id": "5",
-			"url": "/api/images/5.jpg"
+			"imgsrc": "/api/images/5.jpg"
 		}, {
 			"id": "6",
-			"url": "/api/images/6.jpg"
+			"imgsrc": "/api/images/6.jpg"
 		}, {
 			"id": "7",
-			"url": "/api/images/7.jpg"
+			"imgsrc": "/api/images/7.jpg"
 		}],
 		"iconsMenuList": [{
 			"id": 1,
-			"url": "/api/images/i1.png",
+			"imgsrc": "/api/images/i1.png",
 			"name": "景点门票"
 		}, {
 			"id": 2,
-			"url": "/api/images/i2.png",
+			"imgsrc": "/api/images/i2.png",
 			"name": "必游榜单"
 		}, {
 			"id": 3,
-			"url": "/api/images/i3.png",
+			"imgsrc": "/api/images/i3.png",
 			"name": "动植物园"
 		}, {
 			"id": 4,
-			"url": "/api/images/i4.png",
+			"imgsrc": "/api/images/i4.png",
 			"name": "公园"
 		}, {
 			"id": 5,
-			"url": "/api/images/i5.png",
+			"imgsrc": "/api/images/i5.png",
 			"name": "游船游艇"
 		}, {
 			"id": 6,
-			"url": "/api/images/i6.png",
+			"imgsrc": "/api/images/i6.png",
 			"name": "踏青赏花"
 		}, {
 			"id": 7,
-			"url": "/api/images/i7.png",
+			"imgsrc": "/api/images/i7.png",
 			"name": "名胜古迹"
 		}, {
 			"id": 8,
-			"url": "/api/images/i8.png",
+			"imgsrc": "/api/images/i8.png",
 			"name": "一日游"
 		}, {
 			"id": 9,
-			"url": "/api/images/i9.png",
+			"imgsrc": "/api/images/i9.png",
 			"name": "玩转长隆"
 		}, {
 			"id": 10,
-			"url": "/api/images/i10.png",
+			"imgsrc": "/api/images/i10.png",
 			"name": "全部玩乐"
 		}],
 		"advList": [{
 			"id": 1,
-			"url": "/api/images/adv1.png",
+			"imgsrc": "/api/images/adv1.png",
 			"desc": "门票特卖"
 		}, {
 			"id": 2,
-			"url": "/api/images/adv2.png",
+			"imgsrc": "/api/images/adv2.png",
 			"desc": "暑期大促"
 		}],
 		"hotList":[{
@@ -127,6 +127,102 @@
 			"imgsrc": "/api/images/hot10.jpg",
 			"name": "广州正佳极地海洋世界",
 			"price": 49.5
+		}],
+		"likeList": [{
+			"id": 1,
+			"imgsrc": "/api/images/hot6.jpg",
+			"name": "广州长隆旅游度假区",
+			"star": 1,
+			"comment": 42026,
+			"price": 68.9,
+			"location": "番禺",
+			"anytime": true
+		}, {
+			"id": 2,
+			"imgsrc": "/api/images/hot2.jpg",
+			"name": "长隆野生动物世界",
+			"star": 2,
+			"comment": 65857,
+			"price": 171.01,
+			"location": "广州长隆",
+			"anytime": true
+		}, {
+			"id": 3,
+			"imgsrc": "/api/images/hot1.jpg",
+			"name": "长隆水上乐园",
+			"star": 3,
+			"comment": 26693,
+			"price": 97,
+			"location": "广州长隆",
+			"anytime": true,
+			"desc": "这里特别受欢迎哟(๑‾ ꇴ ‾๑)"
+		}, {
+			"id": 4,
+			"imgsrc": "/api/images/hot3.jpg",
+			"name": "长隆欢乐世界",
+			"star": 4,
+			"comment": 34001,
+			"price": 157.6,
+			"location": "广州长隆",
+			"anytime": true,
+			"desc": "🔥好评如潮，小伙伴热推景点~"
+		}, {
+			"id": 5,
+			"imgsrc": "/api/images/hot4.jpg",
+			"name": "长隆国际大马戏剧院",
+			"star": 5,
+			"comment": 23039,
+			"price": 313.9,
+			"location": "广州长隆",
+			"anytime": true,
+			"desc": "这里特别受欢迎哟(๑‾ ꇴ ‾๑)"
+		}, {
+			"id": 6,
+			"imgsrc": "/api/images/like1.jpg",
+			"name": "广州塔摩天轮",
+			"star": 4,
+			"comment": 1605,
+			"price": 380,
+			"location": "广州塔",
+			"today": true,
+			"desc": "旋转观光舱，各个角度观赏广州迷人夜景"
+		}, {
+			"id": 7,
+			"imgsrc": "/api/images/like2.jpg",
+			"name": "白水寨",
+			"star": 3,
+			"comment": 7469,
+			"price": 49.5,
+			"location": "增城",
+			"tomorrow": true,
+			"desc": "北回归线上的瑰丽翡翠"
+		}, {
+			"id": 8,
+			"imgsrc": "/api/images/like3.jpg",
+			"name": "南沙百万葵园",
+			"star": 2,
+			"comment": 3403,
+			"price": 75,
+			"location": "南沙区",
+			"tomorrow": true
+		}, {
+			"id": 9,
+			"imgsrc": "/api/images/like4.jpg",
+			"name": "广州花城汇MAG环球魔幻世界",
+			"star": 1,
+			"comment": 3125,
+			"price": 128,
+			"location": "广州",
+			"anytime": true
+		}, {
+			"id": 10,
+			"imgsrc": "/api/images/like5.jpg",
+			"name": "长隆飞鸟乐园",
+			"star": 2,
+			"comment": 6311,
+			"price": 68.9,
+			"location": "广州长隆",
+			"anytime": true
 		}]
 	}
 }
