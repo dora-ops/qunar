@@ -223,6 +223,32 @@
 			"price": 68.9,
 			"location": "广州长隆",
 			"anytime": true
+		}],
+		"weekendList": [{
+			"id": 1,
+			"imgsrc": "/api/images/weekend1.jpg",
+			"title": "广州必游TOP10",
+			"subTitle": "感受现代与传统相融合的广州"
+		}, {
+			"id": 2,
+			"imgsrc": "/api/images/weekend2.jpg",
+			"title": "暑期玩转粤港澳",
+			"subTitle": "这个假期开启最高大上的国内游"
+		}, {
+			"id": 3,
+			"imgsrc": "/api/images/weekend3.jpg",
+			"title": "签到广州长隆",
+			"subTitle": "来广州来长隆，就对了，就够了~"
+		}, {
+			"id": 4,
+			"imgsrc": "/api/images/weekend4.jpg",
+			"title": "自然户外好去处",
+			"subTitle": "快快来到户外，感受花城的魅力"
+		}, {
+			"id": 5,
+			"imgsrc": "/api/images/weekend5.jpg",
+			"title": "开启激情逐浪之旅",
+			"subTitle": "畅爽一夏从这里开始！"
 		}]
 	}
 }
