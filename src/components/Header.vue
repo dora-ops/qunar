@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<div class="header-right">
-			<div class="city">{{this.city}}<i class="iconfont">&#xe602;</i></div>
+			<router-link to="/city" class="city">{{this.city}}<i class="iconfont">&#xe602;</i></router-link>
 		</div>
 	</div>
 </template>
@@ -34,7 +34,7 @@ export default {
 		align-items center
 		.header-left
 			color #fff
-			width 92px
+			width 100px
 			height 100%
 			text-align center
 			display flex
@@ -43,10 +43,10 @@ export default {
 			.iconfont
 				font-size 48px
 		.header-right
-			min-width 92px
+			min-width 100px
 			height 100%
 			display flex
-			padding-left 15px
+			padding-left 24px
 			.city
 				color #fff
 				font-size 32px
