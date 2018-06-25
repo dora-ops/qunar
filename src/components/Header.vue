@@ -10,17 +10,14 @@
 			</div>
 		</div>
 		<div class="header-right">
-			<router-link to="/city" class="city">{{this.city}}<i class="iconfont">&#xe602;</i></router-link>
+			<router-link to="/city" class="city">{{this.$store.state.city}}<i class="iconfont">&#xe602;</i></router-link>
 		</div>
 	</div>
 </template>
 
 <script>
 export default {
-	name: 'Header',
-	props: {
-		city: String
-	}
+	name: 'Header'
 }
 </script>
 

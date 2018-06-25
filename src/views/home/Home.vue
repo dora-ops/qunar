@@ -1,6 +1,6 @@
 <template>
 	<div class="home">
-		<heador :city="city"/>
+		<heador/>
 		<banner :list="bannerList"/>
 		<icons-menu :list="iconsMenuList"/>
 		<adv :list="advList"/>
@@ -32,7 +32,6 @@ export default {
 	},
 	data() {
 		return {
-			city: '',
 			bannerList: [],
 			iconsMenuList: [],
 			advList: [],
@@ -53,7 +52,6 @@ export default {
 			console.log(res)
 			if (res.msg && res.data) {
 				let data = res.data
-				this.city = data.city
 				this.bannerList = data.bannerList
 				this.iconsMenuList = data.iconsMenuList
 				this.advList = data.advList

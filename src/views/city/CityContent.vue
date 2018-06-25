@@ -10,7 +10,7 @@
 				<div class="item hot">
 					<div class="header">热门城市</div>
 					<ul class="content">
-						<li v-for="(item, index) of hotCities" :key="item.id">{{item.name}}</li>
+						<li v-for="(item, index) of hotCities" :key="item.id" @click="cityUpdate(item.name)">{{item.name}}</li>
 					</ul>
 				</div>
 				<div class="item">
@@ -20,7 +20,7 @@
 				<div class="item list" v-for="(item, key) of cities" :key="key" ref="key">
 					<div class="header">{{key}}</div>
 					<ul class="content">
-						<li v-for="innerItem of item" :key="innerItem.id">{{innerItem.name}}</li>
+						<li v-for="innerItem of item" :key="innerItem.id" @click="cityUpdate(innerItem.name)">{{innerItem.name}}</li>
 					</ul>
 				</div>
 			</div>
@@ -68,6 +68,10 @@ export default {
 		alphabetUpdate(index) {
 			let element = this.$refs.key[index]
 			this.scroll.scrollToElement(element)
+		},
+		cityUpdate(city) {
+			this.$store.commit('updateCity', city)
+			this.$router.push('/')
 		}
 	}
 }
@@ -110,7 +114,7 @@ export default {
 						position absolute
 						right 0
 						bottom 0
-						z-index 1
+						z-index 2
 						width 100%
 						height 2px
 						background-color #fff
@@ -133,6 +137,7 @@ export default {
 							border-left 1px solid #ddd
 							border-right 1px solid #ddd
 						li
+							z-index 1
 							width 33.33%
 							height 100px
 							font-size 32px
