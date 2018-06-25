@@ -1,10 +1,9 @@
 <template>
 	<div class="star">
-		<img src="../assets/images/star-full.png"/>
-		<img src="../assets/images/star-full.png"/>
-		<img src="../assets/images/star-full.png"/>
-		<img src="../assets/images/star-full.png"/>
-		<img src="../assets/images/star-full.png"/>
+		<div v-for="item of starArray">
+			<img src="../assets/images/star-full.png" v-if="item"/>
+			<img src="../assets/images/star-empty.png" v-if="!item"/>
+		</div>
 	</div>
 </template>
 
@@ -13,6 +12,23 @@ export default {
 	name: 'Star',
 	props: {
 		number: Number
+	},
+	data() {
+		return {
+			stars: []
+		}
+	},
+	computed: {
+		starArray() {
+			for (let i = 0; i < 5; i++) {
+				if (i < this.number) {
+					this.stars.push(1)
+				} else {
+					this.stars.push(0)
+				}
+			}
+			return this.stars
+		}
 	}
 }
 </script>
