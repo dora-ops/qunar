@@ -49,10 +49,10 @@ export default {
 	.icons-menu >>> .swiper-pagination
 		bottom: -32px
 	.icons-menu >>> .swiper-pagination-bullet
-		width 12px
-		height 12px
+		width 14px
+		height 14px
 		margin 0 8px
-		border-radius 12px
+		border-radius 14px
 	.icons-menu >>> .swiper-pagination-bullet-active
 		background-color rgba(0,175,190,.8)
 	.icons-menu
