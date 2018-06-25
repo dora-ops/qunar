@@ -50,7 +50,7 @@ export default {
 		},
 		getSuccess(res) {
 			res = res.data
-			console.log(res);
+			console.log(res)
 			if (res.msg && res.data) {
 				let data = res.data
 				this.city = data.city
