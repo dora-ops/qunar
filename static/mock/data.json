@@ -1,7 +1,6 @@
 {
 	"msg": "success",
 	"data": {
-		"city": "广州",
 		"bannerList": [{
 			"id": "1",
 			"imgsrc": "/api/images/1.jpg"
