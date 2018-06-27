@@ -2,7 +2,7 @@
 	<div class="hot">
 		<div class="hot-header">
 			<div class="hot-header-title">
-				<img src="http://img1.qunarzz.com/piao/fusion/1711/16/bfbb9874e8f11402.png" alt="本周热门榜单">
+				<img src="../assets/images/hot.png" alt="本周热门榜单">
 				<span>本周热门榜单</span>
 			</div>
 			<div class="hot-all">
