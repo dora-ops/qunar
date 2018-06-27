@@ -2,7 +2,7 @@
 	<div class="like">
 		<div class="like-header">
 			<div class="like-header-title">
-				<img src="http://img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png" alt="本周热门榜单">
+				<img src="../assets/images/like.png" alt="本周热门榜单">
 				<span>猜你喜欢</span>
 			</div>
 		</div>
