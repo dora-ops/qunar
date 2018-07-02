@@ -19,6 +19,7 @@ import Hot from '../../components/Hot'
 import Like from '../../components/Like'
 import Weekend from '../../components/Weekend'
 import axios from 'axios'
+import { mapState } from 'vuex'
 export default {
 	name: 'Home',
 	components: {
@@ -32,6 +33,7 @@ export default {
 	},
 	data() {
 		return {
+			lastCity: '',
 			bannerList: [],
 			iconsMenuList: [],
 			advList: [],
@@ -40,12 +42,22 @@ export default {
 			weekendList: []
 		}
 	},
+	computed: {
+		...mapState(['city'])
+	},
 	mounted() {
 		this.getHomeInfo()
+		this.lastCity = this.city
+	},
+	activated() {
+		if (this.lastCity !== this.city) {
+			this.lastCity = this.city
+			this.getHomeInfo()
+		}
 	},
 	methods: {
 		getHomeInfo() {
-			axios.get('/api/mock/data.json').then(this.getSuccess)
+			axios.get('/api/mock/data.json?city=' + this.city).then(this.getSuccess)
 		},
 		getSuccess(res) {
 			res = res.data
