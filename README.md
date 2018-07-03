@@ -6,19 +6,36 @@
 
 ## 项目概述 
 
-由于以前在公司的时候都是使用jQuery来重构项目的原因，现今前端框架（Angular、React、Vue）三分天下，个人技能中没有能熟练运用其中一项的话，都已经是跟不上前端技术前沿了。于是，我的Vue全家桶学习旅程开始了..
+由于以前在公司的时候都是使用jQuery来重构项目的原因，现今前端框架（Angular、React、Vue）三分天下，个人技能中没有能熟练运用其中一项的话，都已经是跟不上前端技术前沿了！
+
+于是，我的Vue全家桶学习旅程开始了...
+
 
 ## 项目难点
 
 > 没有设计稿，都是根据多年Web前端工作经验，按照750px宽的设计稿来重构的
 
-## 功能列表
+## 环境参数
 
-- [x] Header组件（顶部城市搜索）
-- [x] 城市选择组件（城市选择）
-- [x] Banner组件（图片切换）
-- [x] Icon菜单组件（Icon菜单）
-- [x] 促销广告组件（促销广告）
-- [x] 热门榜单组件（热门榜单）
-- [x] 猜你喜欢组件（猜你喜欢）
-- [x] 周末去哪儿组件（周末去哪儿）
+name version | name version | name version | name version | name version
+---------- | ----------- | ----------- | ----------- | -----------
+node.js v10.3.0 | npm 6.1.0 | vue-cli 2.9.4 | vue 2.5.2 | vuex 3.0.1
+vue-router 3.0.1 | axios 0.18.0  | stylus 0.54.5 | babel 6.22.1  | webpack 3.6.0
+IDE sublime Text3
+
+## 下载安装
+
+``` bash
+# 下载克隆
+git clone https://github.com/leoqihui/qunar.git
+
+# 目录切换
+cd leoqihui
+
+# 安装依赖
+npm install
+
+# 浏览器运行
+npm run dev
+
+```
