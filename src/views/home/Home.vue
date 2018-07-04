@@ -1,16 +1,16 @@
 <template>
 	<div class="home">
-		<heador :city="city"/>
+		<header-searchbar :city="city"/>
 	</div>
 </template>
 
 <script>
-import Heador from '../../components/Header'
+import HeaderSearchbar from '../../components/HeaderSearchbar'
 import axios from 'axios'
 export default {
 	name: 'Home',
 	components: {
-		Heador
+		HeaderSearchbar
 	},
 	data() {
 		return {
