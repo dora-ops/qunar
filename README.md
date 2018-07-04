@@ -21,7 +21,7 @@ name version | name version | name version | name version | name version
 ---------- | ----------- | ----------- | ----------- | -----------
 node.js v10.3.0 | npm 6.1.0 | vue-cli 2.9.4 | vue 2.5.2 | vuex 3.0.1
 vue-router 3.0.1 | axios 0.18.0  | stylus 0.54.5 | babel 6.22.1  | webpack 3.6.0
-IDE sublime Text3
+IDE sublime text3
 
 ## 下载安装
 
