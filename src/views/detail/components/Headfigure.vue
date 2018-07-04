@@ -27,6 +27,7 @@ export default {
 
 <style lang="stylus" scoped>
 	.headfigure
+		height 418px
 		.figure
 			position relative
 			&:after
@@ -39,7 +40,7 @@ export default {
 				background-image: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.8))
 			.header
 				position absolute
-				top 20px
+				top 14px
 				left 20px
 				.header-left
 					display block
