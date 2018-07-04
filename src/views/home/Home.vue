@@ -1,5 +1,6 @@
 <template>
 	<div class="home">
+<<<<<<< HEAD
 		<heador/>
 		<banner :list="bannerList"/>
 		<icons-menu :list="iconsMenuList"/>
@@ -7,10 +8,14 @@
 		<hot :list="hotList"/>
 		<like :list="likeList"/>
 		<weekend :list="weekendList"/>
+=======
+		<header-searchbar :city="city"/>
+>>>>>>> header
 	</div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import Heador from '../../components/Header'
 import Banner from '../../components/Banner'
 import IconsMenu from '../../components/IconsMenu'
@@ -18,11 +23,15 @@ import Adv from '../../components/Adv'
 import Hot from '../../components/Hot'
 import Like from '../../components/Like'
 import Weekend from '../../components/Weekend'
+=======
+import HeaderSearchbar from '../../components/HeaderSearchbar'
+>>>>>>> header
 import axios from 'axios'
 import { mapState } from 'vuex'
 export default {
 	name: 'Home',
 	components: {
+<<<<<<< HEAD
 		Heador,
 		Banner,
 		IconsMenu,
@@ -30,6 +39,9 @@ export default {
 		Hot,
 		Like,
 		Weekend
+=======
+		HeaderSearchbar
+>>>>>>> header
 	},
 	data() {
 		return {
