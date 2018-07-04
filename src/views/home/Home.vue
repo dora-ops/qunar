@@ -1,47 +1,35 @@
 <template>
 	<div class="home">
-<<<<<<< HEAD
-		<heador/>
+		<header-searchbar :city="city"/>
 		<banner :list="bannerList"/>
 		<icons-menu :list="iconsMenuList"/>
 		<adv :list="advList"/>
 		<hot :list="hotList"/>
 		<like :list="likeList"/>
 		<weekend :list="weekendList"/>
-=======
-		<header-searchbar :city="city"/>
->>>>>>> header
 	</div>
 </template>
 
 <script>
-<<<<<<< HEAD
-import Heador from '../../components/Header'
+import HeaderSearchbar from '../../components/HeaderSearchbar'
 import Banner from '../../components/Banner'
 import IconsMenu from '../../components/IconsMenu'
 import Adv from '../../components/Adv'
 import Hot from '../../components/Hot'
 import Like from '../../components/Like'
 import Weekend from '../../components/Weekend'
-=======
-import HeaderSearchbar from '../../components/HeaderSearchbar'
->>>>>>> header
 import axios from 'axios'
 import { mapState } from 'vuex'
 export default {
 	name: 'Home',
 	components: {
-<<<<<<< HEAD
-		Heador,
+		HeaderSearchbar,
 		Banner,
 		IconsMenu,
 		Adv,
 		Hot,
 		Like,
 		Weekend
-=======
-		HeaderSearchbar
->>>>>>> header
 	},
 	data() {
 		return {
