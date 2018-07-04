@@ -2,6 +2,7 @@
 	"msg": "success",
 	"data": {
 		"figure": {
+			"title": "广州长隆旅游度假区",
 			"name": "广州长隆旅游度假区(AAAAA景区)",
 			"imgCover": "/api/images/detail/d1.jpg"
 		}
