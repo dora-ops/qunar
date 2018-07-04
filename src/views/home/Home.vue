@@ -1,6 +1,6 @@
 <template>
 	<div class="home">
-		<header-searchbar :city="city"/>
+		<searchbar :city="city"/>
 		<banner :list="bannerList"/>
 		<icons-menu :list="iconsMenuList"/>
 		<adv :list="advList"/>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import HeaderSearchbar from '../../components/HeaderSearchbar'
+import Searchbar from '../../components/Searchbar'
 import Banner from '../../components/Banner'
 import IconsMenu from '../../components/IconsMenu'
 import Adv from '../../components/Adv'
@@ -23,7 +23,7 @@ import { mapState } from 'vuex'
 export default {
 	name: 'Home',
 	components: {
-		HeaderSearchbar,
+		Searchbar,
 		Banner,
 		IconsMenu,
 		Adv,
