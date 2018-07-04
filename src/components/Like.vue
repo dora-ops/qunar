@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="like-content">
-			<div class="item" v-for="(item, index) of list" :key="index">
+			<router-link class="item" v-for="(item, index) of list" :key="index" :to="'/detail/id=' + item.id">
 				<div class="image">
 					<img :src="item.imgsrc" :alt="item.name"/>
 					<div class="condition anytime" v-if="item.anytime">随买随用</div>
@@ -30,7 +30,7 @@
 						<li class="desc" v-if="item.desc">{{item.desc}}</li>
 					</ul>
 				</div>
-			</div>
+			</router-link>
 			<div class="all">查看所有产品</div>
 		</div>
 	</div>
@@ -107,6 +107,7 @@ export default {
 				.infor
 					flex 1
 					.name
+						color #333
 						font-size 36px
 					.score-comment
 						color #616161
