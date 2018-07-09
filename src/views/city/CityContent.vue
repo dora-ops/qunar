@@ -10,7 +10,7 @@
 				<div class="item hot">
 					<div class="header">热门城市</div>
 					<ul class="content">
-						<li v-for="(item, index) of hotCities" :key="item.id" @click="cityUpdate(item.name)">{{item.name}}</li>
+						<li v-for="(item, index) of hotCities" :key="item.id" @click.native="cityUpdate(item.name)">{{item.name}}</li>
 					</ul>
 				</div>
 				<div class="item">
@@ -59,7 +59,9 @@ export default {
 		Alphabet
 	},
 	mounted() {
-		this.scroll = new BScroll(this.$refs.wrapper)
+		this.scroll = new BScroll(this.$refs.wrapper, {
+			click: true
+		})
 	},
 	methods: {
 		handleClick(index) {
