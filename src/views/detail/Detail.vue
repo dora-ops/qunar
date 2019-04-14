@@ -3,40 +3,40 @@
         <HeaderDefault :title="title" :style="opacityStyle" />
         <headfigure :figureName="figureName" :figureImgCover="figureImgCover" />
         <!-- <baseinfo /> -->
-       <!-- 上部分信息 -->
-      <div class="imooc-container">
-        <!-- 标题 -->
-        <div class="title bold">{{ classData.location }}</div>
-        <!-- 副标题 -->
-        <div class="content mb-10">{{ classData.content }}</div>
-        <!-- 价格 -->
-        <div class="imooc-flex imooc-flex-between">
-          <div class="money">
-            <div class="rel-money bold">&#165;{{ classData.price + '.00' }}</div>
-            <div class="old-money fz-small cr-basic">&#165;{{ classData.price + 50 + '.00' }}</div>
-          </div>
-          
+        <!-- 上部分信息 -->
+        <div class="imooc-container">
+            <!-- 标题 -->
+            <div class="title bold">{{ classData.location }}</div>
+            <!-- 副标题 -->
+            <div class="content mb-10">{{ classData.content }}</div>
+            <!-- 价格 -->
+            <div class="imooc-flex imooc-flex-between">
+                <div class="money">
+                    <div class="rel-money bold">&#165;{{ classData.price + '.00' }}</div>
+                    <div class="old-money fz-small cr-basic">&#165;{{ classData.price + 50 + '.00' }}</div>
+                </div>
+
+            </div>
+            <!-- 套餐介绍 -->
+            <ul class="intro">
+                <li class="intro-item imooc-flex">
+                    <div class="title bold">促销</div>
+                    <div class="content">已支持支付宝花呗付款</div>
+                </li>
+                <li class="intro-item imooc-flex">
+                    <div class="title bold">收藏</div>
+                    <div class="content">人数&#8901;{{ classData.star }}&#8901;</div>
+                </li>
+                <li class="intro-item imooc-flex">
+                    <div class="title bold">评论数</div>
+                    <div class="content">人次&#165;{{ classData.comment }}</div>
+                </li>
+                <li class="intro-item imooc-flex">
+                    <div class="title bold">服务</div>
+                    <div class="content">{{ classData.anytime }}</div>
+                </li>
+            </ul>
         </div>
-        <!-- 套餐介绍 -->
-        <ul class="intro">
-          <li class="intro-item imooc-flex">
-            <div class="title bold">促销</div>
-            <div class="content">已支持支付宝花呗付款</div>
-          </li>
-          <li class="intro-item imooc-flex">
-            <div class="title bold">收藏</div>
-            <div class="content">人数&#8901;{{ classData.star }}&#8901;</div>
-          </li>
-          <li class="intro-item imooc-flex">
-            <div class="title bold">评论数</div>
-            <div class="content">人次&#165;{{ classData.comment }}</div>
-          </li>
-          <li class="intro-item imooc-flex">
-            <div class="title bold">服务</div>
-            <div class="content">{{ classData.anytime }}</div>
-          </li>
-        </ul>
-      </div>
         <!-- 评分 -->
         <div class="rate imooc-container">
             <p>评价</p>
@@ -98,7 +98,7 @@ import HeaderDefault from "@/components/HeaderDefault";
 import Headfigure from "./components/Headfigure";
 import Baseinfo from "./components/Baseinfo";
 import axios from "axios";
-import { customers,likelist,commentlist } from "@/sqlMap.js"
+import { customers, likelist, commentlist } from "@/sqlMap.js";
 export default {
   name: "Detail",
   components: {
@@ -116,46 +116,48 @@ export default {
         opacity: 0
       },
       commentlist: [],
-      
+
       classData: {},
-    //   intro: {},
+      //   intro: {},
       showAll: false
-   
     };
   },
-  mounted() {
+  created() {
     this.getDetailInfo();
   },
   methods: {
     getDetailInfo() {
-        var id=this.$route.params.id
-        // debugger
-        var sql=likelist.getOne.replace('?',id)
-         axios.post('action',{sql:sql}).then(this.getSuccess)
-         sql=commentlist.find.replace('?',id)
-         axios.post('action',{sql:sql}).then(res=>{
-             this.commentlist=res.data
-             console.log(this.commentlist)
-         })
-    //   axios
-    //     .get("/api/mock/detail.json", {
-    //       params: {
-    //         id: this.$route.params.id
-    //       }
-    //     })
-    //     .then(this.getSuccess);
+      var id = this.$route.params.id;
+      // debugger
+      var sql = likelist.getOne.replace("?", id);
+      axios.post("action", { sql: sql }).then(this.getSuccess);
+      sql = commentlist.find.replace("?", id);
+      axios.post("action", { sql: sql }).then(res => {
+        this.commentlist = res.data;
+        console.log(this.commentlist);
+      });
+      //   axios
+      //     .get("/api/mock/detail.json", {
+      //       params: {
+      //         id: this.$route.params.id
+      //       }
+      //     })
+      //     .then(this.getSuccess);
     },
     getSuccess(res) {
-        let data = res.data[0];
-        this.title = data.title;
-        this.figureName = data.name;
-        this.figureImgCover = data.imgCover;
-        this.classData=data  
+      let data = res.data[0];
+      this.title = data.title;
+      this.figureName = data.name;
+      this.figureImgCover = data.imgCover;
+      this.classData = data;
     },
     scrollHandle() {
-    //   var scrollTop = document.documentElement.scrollTop;
-    var scrollTop =document.documentElement.scrollTop || document.body.scrollTop || window.pageYOffset
-    //   debugger
+      //   var scrollTop = document.documentElement.scrollTop;
+      var scrollTop =
+        document.documentElement.scrollTop ||
+        document.body.scrollTop ||
+        window.pageYOffset;
+      //   debugger
       console.log(scrollTop);
       if (scrollTop > 10) {
         let opacity = scrollTop / 10;
@@ -171,12 +173,28 @@ export default {
     },
     toPayPage() {
       alert(
-        `购买课程《${this.classData.title}》,一共支付${this.classData.price}元`
+        `购买景点门票《${this.classData.title}》,一共支付${
+          this.classData.price
+        }元`
       );
-      
+      var userInfo =JSON.parse(this.$storage.get("userInfo"))
+
+      axios
+        .post("insert", {
+          table: "v_order",
+          data: {
+            cus_id: userInfo.id,
+            like_id: this.classData.id,
+            like_name: this.classData.title,
+            num: this.classData.price
+          }
+        })
+        .then(res => {
+          this.$router.push({ name: "personalCenter" });
+        });
     },
     addToCar(e) {
-      if (this.$storage.get('userInfo')) {
+      if (this.$storage.get("userInfo")) {
         let data = this.classData;
         let id = this.$route.params.id;
 
@@ -206,7 +224,7 @@ export default {
     }
   },
   activated() {
-     window.addEventListener("scroll", this.scrollHandle);
+    window.addEventListener("scroll", this.scrollHandle);
     // window.scrollTo(0, 0);
   }
 };

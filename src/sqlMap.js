@@ -86,10 +86,16 @@ const commentlist={
     find: 'select * from commentlist cl where cl.like_id=?'
 }
 
+const v_order={
+    find: 'select * from v_order cl where cl.cus_id=?',
+    getOne:'select * from v_order cl where cl.id=?'
+}
+
 module.exports = {
     pageList,
     base,
     customers,
     likelist,
-    commentlist
+    commentlist,
+    v_order
 };

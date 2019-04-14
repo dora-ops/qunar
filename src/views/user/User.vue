@@ -3,8 +3,8 @@
       <div class="user">
       <ul class="item-list">
         <li>  
-          <router-link to='/user/card'>
-            <p>我的电影票</p>
+          <router-link to='/order'>
+            <p>我的订单</p>
           </router-link>
         </li>
         <li>

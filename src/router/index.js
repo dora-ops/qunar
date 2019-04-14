@@ -7,6 +7,8 @@ import Detail from '@/views/detail/Detail'
 import User from '@/views/user/User'
 // import User1 from '@/views/user'
 import Login from '@/views/user/login'
+import addPost from '@/views/comment/addPost'
+import order from '@/views/user/myCourse'
 import Register from '@/views/user/register'
 Vue.use(Router)
 
@@ -30,9 +32,19 @@ export default new Router({
 		component: User
     },
     {
+		path: '/order',
+		name: 'order',
+		component: order
+    },
+    {
 		path: '/login',
 		name: 'login',
 		component: Login
+    },
+    {
+		path: '/addPost/:id',
+		name: 'addPost',
+		component: addPost
     },
     {
 		path: '/register',
