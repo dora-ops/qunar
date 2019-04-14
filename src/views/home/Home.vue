@@ -7,6 +7,7 @@
 		<hot :list="hotList"/>
 		<like :list="likeList"/>
 		<weekend :list="weekendList"/>
+        <bottom v-bind:switchValue="switchValue"></bottom>
 	</div>
 </template>
 
@@ -17,9 +18,11 @@ import IconsMenu from '../../components/IconsMenu'
 import Adv from '../../components/Adv'
 import Hot from '../../components/Hot'
 import Like from '../../components/Like'
+import bottom from '../../components/bottom'
 import Weekend from '../../components/Weekend'
 import axios from 'axios'
 import { mapState } from 'vuex'
+import { customers,likelist } from "@/sqlMap.js"
 export default {
 	name: 'Home',
 	components: {
@@ -29,7 +32,8 @@ export default {
 		Adv,
 		Hot,
 		Like,
-		Weekend
+        Weekend,
+        bottom
 	},
 	data() {
 		return {
@@ -39,7 +43,8 @@ export default {
 			advList: [],
 			hotList: [],
 			likeList: [],
-			weekendList: []
+            weekendList: [],
+            switchValue: 1,
 		}
 	},
 	computed: {
@@ -57,7 +62,10 @@ export default {
 	},
 	methods: {
 		getHomeInfo() {
-			axios.get('/api/mock/data.json?city=' + this.city).then(this.getSuccess)
+            axios.post('action',{sql:likelist.getAll}).then(res=>{
+                this.likeList=res.data
+            })
+			// axios.get('/api/mock/data.json?city=' + this.city).then(this.getSuccess)
 		},
 		getSuccess(res) {
 			res = res.data

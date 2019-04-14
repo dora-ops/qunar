@@ -7,7 +7,7 @@
 			</div>
 		</div>
 		<div class="like-content">
-			<router-link class="item" v-for="(item, index) of list" :key="index" :to="'/detail/id=' + item.id">
+			<router-link class="item" v-for="(item, index) of list" :key="index" :to="'/detail/' + item.id">
 				<div class="image">
 					<img :src="item.imgsrc" :alt="item.name"/>
 					<div class="condition anytime" v-if="item.anytime">随买随用</div>
