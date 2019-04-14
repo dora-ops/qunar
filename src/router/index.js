@@ -8,6 +8,9 @@ import User from '@/views/user/User'
 // import User1 from '@/views/user'
 import Login from '@/views/user/login'
 import addPost from '@/views/comment/addPost'
+
+import forum from '@/views/forum/forum'
+import addforum from '@/views/forum/addPost'
 import order from '@/views/user/myCourse'
 import Register from '@/views/user/register'
 Vue.use(Router)
@@ -50,6 +53,16 @@ export default new Router({
 		path: '/register',
 		name: 'register',
 		component: Register
+    },
+    {
+		path: '/forum',
+		name: 'forum',
+		component: forum
+    },
+    {
+		path: '/addforum',
+		name: 'addforum',
+		component: addforum
 	},
     ],
 	scrollBehavior (to, from, savedPosition) {

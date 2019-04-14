@@ -7,8 +7,8 @@
       <!-- <a v-if='switchValue == 2' class="course_blue"><li>课程</li></a>
       <a v-else class="course_grey" @click="switchTo('/buyCourse')"><li>课程</li></a> -->
 
-      <!-- <a v-if='switchValue == 3' class="forum_blue"><li>留言</li></a>
-      <a v-else class="forum_grey" @click="switchTo('/forum')"><li>社区</li></a> -->
+      <a v-if='switchValue == 3' class="forum_blue"><li>公告信息</li></a>
+      <a v-else class="forum_grey" @click="switchTo('/forum')"><li>公告信息</li></a>
 
 
       <a v-if='switchValue == 4' class="personal_blue"><li>我</li></a>
