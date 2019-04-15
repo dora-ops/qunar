@@ -1,13 +1,6 @@
 <template>
 	<div class="home">
-		<searchbar :city="city"/>
-		<banner :list="bannerList"/>
-		<icons-menu :list="iconsMenuList"/>
-		<adv :list="advList"/>
-		<hot :list="hotList"/>
 		<like :list="likeList"/>
-		<weekend :list="weekendList"/>
-        <bottom v-bind:switchValue="switchValue"></bottom>
 	</div>
 </template>
 
@@ -64,21 +57,12 @@ export default {
 	},
 	methods: {
 		getHomeInfo() {
-            axios.post('action',{sql:likelist.getAll}).then(res=>{
+            var id = this.$route.params.id;
+            var sql=likelist.find.replace('?',id)
+            axios.post('action',{sql:sql}).then(res=>{
                 this.likeList=res.data
             })
-             axios.post('action',{sql:iconsmenulist.getAll}).then(res=>{
-                this.iconsMenuList=res.data
-            })
-             axios.post('action',{sql:hotlist.getAll}).then(res=>{
-                this.hotList=res.data
-            })
-            axios.post('action',{sql:weekendlist.getAll}).then(res=>{
-                this.weekendList=res.data
-            })
-            axios.post('action',{sql:bannerlist.getAll}).then(res=>{
-                this.bannerList=res.data
-            })
+            
 			// axios.get('/api/mock/data.json?city=' + this.city).then(this.getSuccess)
 		},
 		getSuccess(res) {

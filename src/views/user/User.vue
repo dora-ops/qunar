@@ -7,7 +7,7 @@
             <p>我的订单</p>
           </router-link>
         </li>
-        <li>
+        <!-- <li>
           <p @click='discountClick'>优惠券</p>
         </li>
         <li>
@@ -27,9 +27,9 @@
         </li>
         <li>
           <p @click='alert'>帮助中心</p>
-        </li>
+        </li> -->
         <li>
-          <p @click='alert'>意见反馈</p>
+          <p @click='alert'>退出</p>
         </li>
       </ul>
   </div>
@@ -56,11 +56,8 @@ export default {
       this.discount = true;
     },
     alert(){
-      this.$refs.alerts.alertShow = false;
-      this.$refs.alerts.opts = {
-      content : '暂未开通',
-      }
-      this.$refs.alerts.alertShow = true;
+       this.$storage.clear()
+       this.$router.push('login')
     }
   },
   created(){

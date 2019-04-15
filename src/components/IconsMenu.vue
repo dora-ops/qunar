@@ -1,9 +1,10 @@
 <template>
 	<div class="icons-menu">
 		<swiper :options="swiperOption">
+            
 			<swiper-slide v-for="(page, index) of pages" :key="index">
 				<div class="item" v-for="item of page" :key="item.id">
-					<img :src="item.imgsrc" :alt="item.name" />
+					<img :src="item.imgsrc" :alt="item.name" @click="toView(item.id)" />
 					<span>{{item.name}}</span>
 				</div>
 			</swiper-slide>
@@ -38,8 +39,16 @@ export default {
 				pages[page].push(item)
 			})
 			return pages
-		}
-	}
+        },
+        
+    },
+    methods:{
+        toView(id){
+            debugger
+            this.$router.push('view/'+id)
+        }
+    }
+    
 }
 </script>
 

@@ -9,7 +9,9 @@
 import CityHeader from './CityHeader'
 import CityContent from './CityContent'
 import axios from 'axios'
-
+import { customers,likelist,iconsmenulist, hotlist,
+    bannerlist,
+    weekendlist, hotCities} from "@/sqlMap.js"
 export default {
 	name: 'City',
 	components: {
@@ -27,7 +29,10 @@ export default {
 	},
 	methods: {
 		getCityInfo() {
-			axios.get('/api/mock/city.json').then(this.getSuccess)
+             axios.post('action',{sql:hotCities.getAll}).then(res=>{
+                this.hotCities=res.data
+            })
+			// axios.get('/api/mock/city.json').then(this.getSuccess)
 		},
 		getSuccess(res) {
 			res = res.data

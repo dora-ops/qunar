@@ -80,10 +80,32 @@ const customers = {
 const likelist={
     getAll: 'select * from likelist',
     getOne: 'select * from likelist where id=?',
+    find: 'select * from likelist where i_menu_id=?',
 }
 
 const commentlist={
     find: 'select * from commentlist cl where cl.like_id=?'
+}
+
+const iconsmenulist={
+    getAll: 'select * from iconsmenulist'
+}
+
+const hotlist={
+    getAll: 'select * from hotlist cl '
+}
+
+const bannerlist={
+    getAll: 'select * from bannerlist cl '
+}
+
+
+const weekendlist={
+    getAll: 'select * from weekendlist cl '
+}
+
+const hotCities={
+    getAll: 'select * from hotCities cl '
 }
 
 const v_order={
@@ -97,5 +119,10 @@ module.exports = {
     customers,
     likelist,
     commentlist,
-    v_order
+    v_order,
+    iconsmenulist,
+    hotlist,
+    bannerlist,
+    weekendlist,
+    hotCities
 };

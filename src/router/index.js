@@ -11,6 +11,7 @@ import addPost from '@/views/comment/addPost'
 
 import forum from '@/views/forum/forum'
 import addforum from '@/views/forum/addPost'
+import View from '@/views/home/View'
 import order from '@/views/user/myCourse'
 import Register from '@/views/user/register'
 Vue.use(Router)
@@ -58,6 +59,11 @@ export default new Router({
 		path: '/forum',
 		name: 'forum',
 		component: forum
+    },
+    {
+		path: '/view/:id',
+		name: 'view',
+		component: View
     },
     {
 		path: '/addforum',
