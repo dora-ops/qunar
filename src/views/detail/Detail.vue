@@ -44,15 +44,15 @@
             <div class="rate-container imooc-flex" style="padding-top: 0.5rem;">
                 <div class="item">1</div>
                 <div class="item">
-                    <p class="bold" style="font-size:15px">内容实用</p>
+                    <p class="bold" style="font-size:15px">地方美观</p>
                     2
                 </div>
                 <div class="item">
-                    <p class="bold" style="font-size:15px">通俗易懂</p>
+                    <p class="bold" style="font-size:15px">服务到位</p>
                     3
                 </div>
                 <div class="item">
-                    <p class="bold" style="font-size:15px">逻辑清晰</p>
+                    <p class="bold" style="font-size:15px">价格</p>
                     4
                 </div>
             </div>

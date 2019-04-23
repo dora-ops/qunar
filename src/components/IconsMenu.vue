@@ -44,7 +44,7 @@ export default {
     },
     methods:{
         toView(id){
-            debugger
+            // debugger
             this.$router.push('view/'+id)
         }
     }

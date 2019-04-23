@@ -66,7 +66,7 @@ export default {
       var sql = v_order.getOne.replace("?", post.order_id);
       this.$http.post("action", { sql: sql }).then(res => {
         post.like_id = res.data[0].like_id;
-        debugger
+        // debugger
         var param = { table: "commentlist", data: post };
         this.$http.post("insert", param).then(res => {
           this.$router.push("/detail/" + post.like_id);
